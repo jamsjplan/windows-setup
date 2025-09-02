@@ -13,6 +13,7 @@ Windows の開発環境では、標準のコマンドプロンプトよりもGit
 <img width="1899" height="911" alt="image" src="https://github.com/user-attachments/assets/fa4c08d3-2cef-4bca-94ac-a2925962d537" />
 
 「Download」をクリックし、ダウンロードしたインストーラーを起動
+
 <img width="330" height="158" alt="image" src="https://github.com/user-attachments/assets/51135cad-27d1-4283-8198-d2e85f735d93" />
 
 ### インストール手順
