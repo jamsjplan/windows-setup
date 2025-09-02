@@ -1,6 +1,27 @@
 # windows-setup
 Windows 向けの開発環境セットアップ用リポジトリ
 
+## Git Bashをインストールする
+Windows の開発環境では、標準のコマンドプロンプトよりも **Git Bash** を利用した方が Linux/Unix 系コマンドに近い操作ができ、ドキュメントや他の開発者の手順に従いやすくなります。
+
+### ダウンロード
+[Git for Windows 公式サイト](https://gitforwindows.org/) からインストーラーをダウンロードします。
+
+### インストール手順
+1. ダウンロードしたインストーラーを実行  
+2. **Select Components** はデフォルトのままでOK  
+3. **Choosing the default editor used by Git** では好みのエディタを選択（未指定なら「Use Vim」でも可）  
+4. **Adjusting your PATH environment** では  
+   **"Git from the command line and also from 3rd-party software"** を選択  
+5. その他の設定はデフォルトのままで進めてインストール  
+
+### 動作確認
+インストール後、スタートメニューから **Git Bash** を起動し、以下のコマンドを入力します:
+```bash
+git --version
+インストールされた Git のバージョンが表示されれば成功です。
+```
+
 ## Voltaをインストールする前に
 以前にNodeバージョン管理ツールやNodeをインストールしている場合は、完全にアンインストールしておきます。
 
