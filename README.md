@@ -5,7 +5,7 @@ Windows 向けの開発環境セットアップ用リポジトリ
 - Git Bash
 - Volta
 
-## Git Bashのインストール
+## :one:Git Bashのインストール
 Windows の開発環境では、標準のコマンドプロンプトよりもGit Bashを利用した方がLinux/Unix系コマンドに近い操作ができ、ドキュメントや他の開発者の手順に従いやすくなります。
 
 ### ダウンロード
@@ -33,12 +33,14 @@ Gitのバージョンが表示されればokです。
 
 <img width="574" height="361" alt="image" src="https://github.com/user-attachments/assets/e48f6ca4-9365-4d37-92e1-01e22805c3cb" />
 
+## :two:Voltaのインストール
+[ここ](https://zenn.dev/longbridge/articles/30c70144c97d32)に書いてある手順で進めてokです。
+以下はサイトが削除されてしまった時に備えて残しておきます。
 
-## Voltaをインストールする前に
-以前にNodeバージョン管理ツールやNodeをインストールしている場合は、完全にアンインストールしておきます。
+### インストールする前に
+以前にNodeバージョン管理ツールやNodeをインストールしている場合は、完全にアンインストールしておいてください。
 
-## Voltaをインストールする
-参考：https://zenn.dev/longbridge/articles/30c70144c97d32
+### ダウンロード
 
 ### Windows用のインストーラーをダウンロード
 [Volta公式サイト](https://volta.sh/)「Getting Started」から「download and run the Windows installer」のリンクをクリックし、インストーラーをダウンロードします。
