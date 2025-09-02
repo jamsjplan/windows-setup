@@ -93,8 +93,8 @@ node -v # "v22"以上が表示されればok。
 ```
 
 ### npmのバージョンを確認する：
-```
-npm -v # "10.9.3"が表示される。
+```bash
+npm -v # "10"以上が表示されればok。
 ```
 
 <img width="601" height="363" alt="image" src="https://github.com/user-attachments/assets/0b09bd71-f067-484c-b7d9-14e239208709" />
