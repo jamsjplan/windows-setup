@@ -108,7 +108,13 @@ npm -v # "10"以上が表示されればok。
 ## 開発フォルダに移動
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/12cc6588-0410-4dce-beaa-b676b10b40c1" />
 
-例えば、↑のようにユーザフォルダの`workspace`フォルダで開発したい場合、Git Bashを立ち上げ後、以下のコマンドを実行してください。
+例えば、↑のようにユーザフォルダの`workspace`フォルダで開発したい場合、以下のどちらかを行ってください。
+
+### 方法1:エクスプローラーのパスのところで`cmd`と入力
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/5ee0d816-17c9-43dd-87c5-646b430bfea8" />
+
+### 方法2:Git Bash
 ```bash
 cd workspace/
 ```
@@ -118,6 +124,15 @@ pwd # 現在いるフォルダの位置を確認
 /c/Users/JAMS MK/workspace # このようになってればok
 ```
 
+## 新しくプロジェクトを作成する場合
+```bash
+npx create-next-app@latest <アプリケーション名>
+cd <アプリケーション名>
+
+
+```
+
+## 既存のアプリケーションを実行する場合
 ## ソースコードの取得
 ```bash
 # Git Hubリポジトリ（=アプリケーションのソースコード）をクローン
@@ -134,3 +149,10 @@ npm install
 npm run dev
 ```
 
+# ⚠️エラーが出た場合
+> 'next' は、内部コマンドまたは外部コマンド、
+> 操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+と出た場合、以下のコマンドを実行してください。
+```bash
+npm install next@latest react@latest react-dom@latest
+```
