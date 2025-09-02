@@ -45,6 +45,13 @@ Gitのバージョンが表示されればokです。
 
 <img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/22513473-5737-443c-8f8f-ebdc3af57197" />
 
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/f5114163-d539-4dad-8a70-65b1d77133c8" />
+青く選択している箇所のリンクをクリックしてください。
+
+<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/f636de56-dcc4-48fb-9503-4aef0a3cc8a6" />
+ここは`-windows-x86_64.msi`が付いているものをクリックしてください。
+
+
 ### Windows開発者モードをを有効にする
 VoltaはWindowsの開発者モードを有効にしておく必要があります。
 Windows開発者モードをONにしておかないと、Angular CLIのインストール時にVoltaのエラーが発生します。
