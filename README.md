@@ -29,9 +29,9 @@ git --version
 ```
 Gitのバージョンが表示されればokです。
 
-<img width="500" height="676" alt="image" src="https://github.com/user-attachments/assets/a30825af-ea28-464b-a76f-fdbf85c6d74d" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/a30825af-ea28-464b-a76f-fdbf85c6d74d" />
 
-<img width="500" height="361" alt="image" src="https://github.com/user-attachments/assets/e48f6ca4-9365-4d37-92e1-01e22805c3cb" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e48f6ca4-9365-4d37-92e1-01e22805c3cb" />
 
 ## :two:Voltaのインストール
 [ここ](https://zenn.dev/longbridge/articles/30c70144c97d32)に書いてある手順で進めてokです。
@@ -43,12 +43,12 @@ Gitのバージョンが表示されればokです。
 ### Windows用のインストーラーをダウンロード
 [Volta公式サイト](https://volta.sh/)「Getting Started」から「download and run the Windows installer」のリンクをクリックし、インストーラーをダウンロードします。
 
-<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/22513473-5737-443c-8f8f-ebdc3af57197" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/22513473-5737-443c-8f8f-ebdc3af57197" />
 
-<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/f5114163-d539-4dad-8a70-65b1d77133c8" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/f5114163-d539-4dad-8a70-65b1d77133c8" />
 青く選択している箇所のリンクをクリックしてください。
 
-<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/f636de56-dcc4-48fb-9503-4aef0a3cc8a6" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/f636de56-dcc4-48fb-9503-4aef0a3cc8a6" />
 ここは`-windows-x86_64.msi`が付いているものをクリックしてください。
 
 
@@ -57,7 +57,7 @@ VoltaはWindowsの開発者モードを有効にしておく必要がありま�
 Windows開発者モードをONにしておかないと、Angular CLIのインストール時にVoltaのエラーが発生します。
 検索ボックスに「開発者」と入力し、「開発者向け機能を使う」を起動します。
 
-<img width="783" height="679" alt="image" src="https://github.com/user-attachments/assets/7af7d0f7-eacd-4892-95b6-4cf60f5ce378" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/7af7d0f7-eacd-4892-95b6-4cf60f5ce378" />
 
 開発者モードをオンにします。
 
@@ -75,7 +75,7 @@ Git Bashを起動して以下のように入力します。バージョンが表
 volta --version
 ```
 
-<img width="548" height="282" alt="image" src="https://github.com/user-attachments/assets/70057d5a-f091-4973-8b06-1e7ab008297b" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/70057d5a-f091-4973-8b06-1e7ab008297b" />
 
 
 ### Node.jsをダウンロードしてインストールする：
@@ -99,7 +99,7 @@ npm -v # "10.9.3"が表示される。
 ※以下は実際の開発環境を立ち上げる際の参考手順です。
 
 ## 開発フォルダに移動
-<img width="807" height="587" alt="image" src="https://github.com/user-attachments/assets/12cc6588-0410-4dce-beaa-b676b10b40c1" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/12cc6588-0410-4dce-beaa-b676b10b40c1" />
 
 例えば、↑のようにユーザフォルダの`workspace`フォルダで開発したい場合、Git Bashを立ち上げ後、以下のコマンドを実行してください。
 ```bash
