@@ -89,7 +89,17 @@ npm -v # "10.9.3"が表示される。
 <img width="601" height="363" alt="image" src="https://github.com/user-attachments/assets/0b09bd71-f067-484c-b7d9-14e239208709" />
 
 ---
-※以下は実際の開発環境を立ち上げる際の手順です。
+※以下は実際の開発環境を立ち上げる際の参考手順です。
+
+## 開発フォルダに移動
+例えば、ユーザフォルダの`workspace`フォルダで開発したい場合、Git Bashを立ち上げ後、以下のコマンドを実行してください。
+```bash
+cd workspace/
+pwd # 現在いるフォルダの位置を確認。（/c/Users/JAMS MK/workspaceのように出ればok）
+```
+<img width="807" height="587" alt="image" src="https://github.com/user-attachments/assets/12cc6588-0410-4dce-beaa-b676b10b40c1" />
+
+
 
 ## プロジェクトの起動手順
 ```bash
