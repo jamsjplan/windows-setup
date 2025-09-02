@@ -45,19 +45,23 @@ Gitのバージョンが表示されればokです。
 ### Windows用のインストーラーをダウンロード
 [Volta公式サイト](https://volta.sh/)「Getting Started」から「download and run the Windows installer」のリンクをクリックし、インストーラーをダウンロードします。
 
+<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/22513473-5737-443c-8f8f-ebdc3af57197" />
+
 ### Windows開発者モードをを有効にする
 VoltaはWindowsの開発者モードを有効にしておく必要があります。
 Windows開発者モードをONにしておかないと、Angular CLIのインストール時にVoltaのエラーが発生します。
 検索ボックスに「開発者」と入力し、「開発者向け機能を使う」を起動します。
 
+<img width="783" height="679" alt="image" src="https://github.com/user-attachments/assets/7af7d0f7-eacd-4892-95b6-4cf60f5ce378" />
+
 開発者モードをオンにします。
 
+<img width="461" height="122" alt="image" src="https://github.com/user-attachments/assets/391ce175-7617-4731-a294-03f2e2e6b097" />
+
+
 ### Voltaをインストール
-ダウンロードしたインストーラーを実行します。
-デフォルトのままでインストールしていきます。
-ここで
-「このアプリがデバイスに変更を加えることを許可しますか？」と表示されるので
-「はい」を選択します。
+ダウンロードしたインストーラーを実行します。デフォルトのままでインストールしてokです。
+「このアプリがデバイスに変更を加えることを許可しますか？」と表示された場合は「はい」を選択してください。
 
 ### Voltaの動作確認
 コマンドラインを起動して`volta`と入力します。バージョンが表示されていることが確認できます。
