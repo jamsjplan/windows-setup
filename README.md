@@ -24,12 +24,12 @@ Windows の開発環境では、標準のコマンドプロンプトよりもGit
 ### 確認
 インストール後、スタートメニューからGit Bashを起動し、以下のコマンドを入力します:
 
-<img width="779" height="676" alt="image" src="https://github.com/user-attachments/assets/a30825af-ea28-464b-a76f-fdbf85c6d74d" />
-
 ```bash
 git --version
-インストールされた Git のバージョンが表示されれば成功です。
 ```
+Gitのバージョンが表示されればokです。
+
+<img width="779" height="676" alt="image" src="https://github.com/user-attachments/assets/a30825af-ea28-464b-a76f-fdbf85c6d74d" />
 
 <img width="574" height="361" alt="image" src="https://github.com/user-attachments/assets/e48f6ca4-9365-4d37-92e1-01e22805c3cb" />
 
