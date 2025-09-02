@@ -8,12 +8,7 @@ Windows の開発環境では、標準のコマンドプロンプトよりも **
 [Git for Windows 公式サイト](https://gitforwindows.org/) からインストーラーをダウンロードします。
 
 ### インストール手順
-1. ダウンロードしたインストーラーを実行  
-2. **Select Components** はデフォルトのままでOK  
-3. **Choosing the default editor used by Git** では好みのエディタを選択（未指定なら「Use Vim」でも可）  
-4. **Adjusting your PATH environment** では  
-   **"Git from the command line and also from 3rd-party software"** を選択  
-5. その他の設定はデフォルトのままで進めてインストール  
+参考：https://qiita.com/suke_masa/items/404f06309bb32ca6c9c5
 
 ### 動作確認
 インストール後、スタートメニューから **Git Bash** を起動し、以下のコマンドを入力します:
