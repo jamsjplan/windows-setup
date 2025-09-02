@@ -44,8 +44,14 @@ npm -v # "10.9.3"が表示される。
 
 ## プロジェクトの動作確認
 ```bash
-git clone <リポジトリURL>
+# リポジトリをクローン
+git clone <リポジトリのURL>
 cd <プロジェクト名>
+
+# 依存関係をインストール
+npm install
+
+# 開発サーバーを起動
 npm run dev
 ```
 
