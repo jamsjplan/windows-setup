@@ -19,6 +19,8 @@ Windows の開発環境では、標準のコマンドプロンプトよりもGit
 ### インストール手順
 参考：https://qiita.com/suke_masa/items/404f06309bb32ca6c9c5
 
+基本的には「Next」のままでok
+
 ### 動作確認
 インストール後、スタートメニューから **Git Bash** を起動し、以下のコマンドを入力します:
 ```bash
