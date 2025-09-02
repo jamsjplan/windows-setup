@@ -99,6 +99,9 @@ npm -v # "10"以上が表示されればok。
 
 <img width="601" height="363" alt="image" src="https://github.com/user-attachments/assets/0b09bd71-f067-484c-b7d9-14e239208709" />
 
+
+ここまで確認ができたら、PCを再起動してください。
+
 ---
 ※以下は実際の開発環境を立ち上げる際の参考手順です。
 
