@@ -1,6 +1,10 @@
 # windows-setup
 Windows 向けの開発環境セットアップ用リポジトリ
 
+インストールするもの
+- Git Bash
+- Volta
+
 ## Git Bashをインストールする
 Windows の開発環境では、標準のコマンドプロンプトよりも **Git Bash** を利用した方が Linux/Unix 系コマンドに近い操作ができ、ドキュメントや他の開発者の手順に従いやすくなります。
 
