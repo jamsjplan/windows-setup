@@ -10,6 +10,8 @@ Windows の開発環境では、標準のコマンドプロンプトよりも **
 
 ### ダウンロード
 [Git for Windows 公式サイト](https://gitforwindows.org/) からインストーラーをダウンロードします。
+<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/5e4fbcc9-7d53-4a99-9a56-b0b53a3c3ab3" />
+
 
 ### インストール手順
 参考：https://qiita.com/suke_masa/items/404f06309bb32ca6c9c5
