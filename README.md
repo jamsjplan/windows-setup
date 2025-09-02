@@ -6,12 +6,14 @@ Windows 向けの開発環境セットアップ用リポジトリ
 - Volta
 
 ## Git Bashをインストールする
-Windows の開発環境では、標準のコマンドプロンプトよりも **Git Bash** を利用した方が Linux/Unix 系コマンドに近い操作ができ、ドキュメントや他の開発者の手順に従いやすくなります。
+Windows の開発環境では、標準のコマンドプロンプトよりもGit Bashを利用した方がLinux/Unix系コマンドに近い操作ができ、ドキュメントや他の開発者の手順に従いやすくなります。
 
 ### ダウンロード
 [Git for Windows 公式サイト](https://gitforwindows.org/) からインストーラーをダウンロードします。
-<img width="1920" height="914" alt="image" src="https://github.com/user-attachments/assets/5e4fbcc9-7d53-4a99-9a56-b0b53a3c3ab3" />
+<img width="1899" height="911" alt="image" src="https://github.com/user-attachments/assets/fa4c08d3-2cef-4bca-94ac-a2925962d537" />
 
+「Download」をクリックし、ダウンロードしたインストーラーを起動
+<img width="330" height="158" alt="image" src="https://github.com/user-attachments/assets/51135cad-27d1-4283-8198-d2e85f735d93" />
 
 ### インストール手順
 参考：https://qiita.com/suke_masa/items/404f06309bb32ca6c9c5
