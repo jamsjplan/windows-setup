@@ -10,6 +10,7 @@ Windows の開発環境では、標準のコマンドプロンプトよりもGit
 
 ### ダウンロード
 [Git for Windows 公式サイト](https://gitforwindows.org/) からインストーラーをダウンロードします。
+
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/fa4c08d3-2cef-4bca-94ac-a2925962d537" />
 
 「Download」をクリックし、ダウンロードしたインストーラーを起動
@@ -33,6 +34,7 @@ Gitのバージョンが表示されればokです。
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/e48f6ca4-9365-4d37-92e1-01e22805c3cb" />
 
+
 ## :two:Voltaのインストール
 [ここ](https://zenn.dev/longbridge/articles/30c70144c97d32)に書いてある手順で進めてokです。
 以下はサイトが削除されてしまった時に備えて残しておきます。
@@ -46,9 +48,11 @@ Gitのバージョンが表示されればokです。
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/22513473-5737-443c-8f8f-ebdc3af57197" />
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/f5114163-d539-4dad-8a70-65b1d77133c8" />
+
 青く選択している箇所のリンクをクリックしてください。
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/f636de56-dcc4-48fb-9503-4aef0a3cc8a6" />
+
 ここは`-windows-x86_64.msi`が付いているものをクリックしてください。
 
 
