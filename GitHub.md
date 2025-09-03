@@ -3,22 +3,18 @@
 ## 1. GitHubのトップページにアクセス
 [GitHub公式サイト](https://github.co.jp/)を開きます。
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/508af6ed-dfc8-4417-bebd-f3d7181d5b69" />
-
 ## 2. サインアップ画面へ
 右上の Sign up ボタンをクリックします。
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/6d406d07-1f6c-425e-bbe2-84d4c0b01f26" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/508af6ed-dfc8-4417-bebd-f3d7181d5b69" />
 
 ## 3. Googleアカウントで登録
-
 「Continue with Google」を選択します。
 
-<img width="600" alt="google-login" src="https://github.com/user-attachments/assets/35b12a47-7f41-4d1f-bf90-94a3e8b8f02b" />
-4. Googleアカウントを選択
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/6d406d07-1f6c-425e-bbe2-84d4c0b01f26" />
 
-利用するGoogleアカウントを選びます。
-セキュリティのため、認証（パスワード入力や2段階認証）が求められる場合があります。
+4. Googleアカウントを選択
+利用するGoogleアカウントを選んでください。
 
 5. GitHubのユーザー名・メール確認
 
