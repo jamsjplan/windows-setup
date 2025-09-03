@@ -12,21 +12,11 @@
   - Volta：バージョン管理ツール
 
 ### GitHubへの登録
-<details>
+[ここ](https://github.com/jamsjplan/windows-setup/blob/main/GitHub.md)を参照してください。
 
-<summary>折り畳み</summary>
+### CloudFlareへの登録
+[ここ](https://github.com/jamsjplan/windows-setup/blob/main/GitHub.md)を参照してください。
 
-### You can add a header
-
-You can add text within a collapsed section.
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
-
-</details>
 
 ## :two:Voltaのインストール
 [ここ](https://zenn.dev/longbridge/articles/30c70144c97d32)に書いてある手順で進めてokです。
