@@ -4,7 +4,7 @@
 [GitHub公式サイト](https://github.co.jp/)を開きます。
 
 ## 2. サインアップ画面へ
-右上の Sign up ボタンをクリックします。
+右上の「サインアップ」ボタンをクリックします。
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/508af6ed-dfc8-4417-bebd-f3d7181d5b69" />
 
