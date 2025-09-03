@@ -1,39 +1,32 @@
-# windows-setup
-Windows 向けの開発環境セットアップ用リポジトリ
+# 開発環境セットアップ用ドキュメント
 
-インストールするもの
-- Git Bash
-- Volta
+## 対象
+- Windows 10/11
+- Webアプリケーション開発
 
-## :one:Git Bashのインストール
-Windows の開発環境では、標準のコマンドプロンプトよりもGit Bashを利用した方がLinux/Unix系コマンドに近い操作ができ、ドキュメントや他の開発者の手順に従いやすくなります。
+## 登録するサービス
+  - GitHub：アプリのソースコード管理サービス
+  - Cloudflare：アプリを展開できるクラウドサービス
+## PCにインストールするもの
+  - Cursor：AIコードエディタ
+  - Volta：バージョン管理ツール
 
-### ダウンロード
-[Git for Windows 公式サイト](https://gitforwindows.org/) からインストーラーをダウンロードします。
+### GitHubへの登録
+<details>
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/fa4c08d3-2cef-4bca-94ac-a2925962d537" />
+<summary>折り畳み</summary>
 
-「Download」をクリックし、ダウンロードしたインストーラーを起動
+### You can add a header
 
-<img width="330" height="158" alt="image" src="https://github.com/user-attachments/assets/51135cad-27d1-4283-8198-d2e85f735d93" />
+You can add text within a collapsed section.
 
-### インストール手順
-参考：https://qiita.com/suke_masa/items/404f06309bb32ca6c9c5
+You can add an image or a code block, too.
 
-基本的には「Next」のままでok
-
-### インストールできたか確認
-インストール後、スタートメニューからGit Bashを起動し、以下のコマンドを入力します:
-
-```bash
-git --version
+```ruby
+   puts "Hello World"
 ```
-Gitのバージョンが表示されればokです。
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/a30825af-ea28-464b-a76f-fdbf85c6d74d" />
-
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/e48f6ca4-9365-4d37-92e1-01e22805c3cb" />
-
+</details>
 
 ## :two:Voltaのインストール
 [ここ](https://zenn.dev/longbridge/articles/30c70144c97d32)に書いてある手順で進めてokです。
