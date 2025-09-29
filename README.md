@@ -2,7 +2,29 @@
 
 ## 対象
 - Windows 10/11
-- Webアプリケーション開発
+- Webアプリ開発（Next.js / Node.js）
+
+## ゴール
+1. WSL（Ubuntu）で Node.js + npm が使える
+2. Cursor から WSL 上のプロジェクトを編集・起動できる
+3. GitHub / Cloudflare に登録できる
+4. 新規/既存アプリを `npm run dev` で動かせる
+
+## 0. 全体像（やること）
+
+1. Windows に **WSL（Ubuntu）** を入れる
+2. Ubuntu を初期設定（アップデート・基本ツール）
+3. **Node.js と npm** を入れる（Voltaは使わず、WSL内で nvm→npm を利用）
+4. **Cursor**（VS Code系エディタ）を Windows に入れて、WSL とつなぐ
+5. GitHub / Cloudflare に登録（リンクあり）
+6. 新規 or 既存のプロジェクトを起動
+
+> **用語メモ**
+>
+> * **WSL**: Windows 上で Linux（今回は Ubuntu）を動かす仕組み。開発が安定・高速になります。
+> * **Ubuntu**: Linux の一種。WSL の中で動く“黒い画面”のOSです。
+> * **npm**: Node.js 用のパッケージ管理コマンド。今回は **npm** を使います（Voltaは使いません）。
+
 
 ## 登録するサービス
   - GitHub：アプリのソースコード管理サービス
