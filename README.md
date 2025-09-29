@@ -95,7 +95,11 @@ wsl --set-version Ubuntu 2
 2. **Node.js（LTS）をインストール**
 
    ```bash
-   sudo apt install nodejs -y
+   # NodeSource公式リポジトリを追加（v22用）
+   curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+   
+   # v22系をインストール
+   sudo apt-get install -y nodejs
    ```
    
 3. **バージョン確認**（数字が表示されればOK）
