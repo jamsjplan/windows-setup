@@ -10,6 +10,8 @@
 3. GitHub / Cloudflare に登録できる
 4. 新規/既存アプリを `npm run dev` で動かせる
 
+---
+
 ## 0. 全体像（やること）
 
 1. Windows に **WSL（Ubuntu）** を入れる
