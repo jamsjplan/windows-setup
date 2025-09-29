@@ -16,7 +16,7 @@
 
 1. Windows に **WSL（Ubuntu）** を入れる
 2. Ubuntu を初期設定（アップデート・基本ツール）
-3. **Node.js と npm** を入れる（Voltaは使わず、WSL内で nvm→npm を利用）
+3. **Node.js と npm** を入れる（WSL内で nvm→npm を利用）
 4. **Cursor**（VS Code系エディタ）を Windows に入れて、WSL とつなぐ
 5. GitHub / Cloudflare に登録（リンクあり）
 6. 新規 or 既存のプロジェクトを起動
@@ -25,89 +25,100 @@
 >
 > * **WSL**: Windows 上で Linux（今回は Ubuntu）を動かす仕組み。開発が安定・高速になります。
 > * **Ubuntu**: Linux の一種。WSL の中で動く“黒い画面”のOSです。
-> * **npm**: Node.js 用のパッケージ管理コマンド。今回は **npm** を使います（Voltaは使いません）。
+> * **npm**: Node.js 用のパッケージ管理コマンド。今回は **npm** を使います。
 
+## 1. 事前準備（Windows）
 
-## 登録するサービス
-  - GitHub：アプリのソースコード管理サービス
-  - Cloudflare：アプリを展開できるクラウドサービス
-## PCにインストールするもの
-  - Cursor：AIコードエディタ
-  - Volta：バージョン管理ツール
+* **PowerShell（管理者）** を使います（スタートメニューで「PowerShell」を検索 → 右クリック → *管理者として実行*）。
+
+---
+
+## 2. WSL（Ubuntu）をインストール
+
+### 2-1. もっとも簡単な入れ方（Windows 11 / 10 共通）
+
+1. **PowerShell（管理者）** で次を実行：
+
+   ```powershell
+   wsl --install
+   ```
+2. 指示に従って **再起動**。
+3. 再起動後、自動で **Ubuntu** の初回セットアップが始まります。ユーザー名・パスワードを入力して完了。
+
+### 2-2. インストール確認
+
+PowerShell で次を実行して、**VERSION が 2** になっていればOKです。
+
+```powershell
+wsl -l -v
+  NAME              STATE           VERSION
+* Ubuntu            Running         2
+```
+
+`Ubuntu` が表示されなければインストールからやり直し、`VERSION` が 1 の場合は：
+
+```powershell
+wsl --set-version Ubuntu 2
+```
+
+---
+
+## 3. Ubuntu（WSL）の初期設定
+
+1. スタートメニューから **Ubuntu** を起動（黒い端末が開きます）。
+2. 下記を順に実行（パスワード入力を求められます）。
+
+   ```bash
+   sudo apt update
+   sudo apt -y upgrade
+   ```
+   
+3. **作業フォルダ** を WSL 内に作成。
+
+   ```bash
+   mkdir -p ~/workspace
+   cd ~/workspace
+   ```
+
+---
+
+## 4. Node.js と npm を入れる（Voltaなし／nvm利用）
+
+> npm を使うために、まず Node.js を入れます。WSL では **nvm（Node Version Manager）** を使うのが簡単＆安全です。
+
+1. **nvm のインストール**
+
+   ```bash
+   sudo apt-get install curl
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+   ```
+2. **Node.js（LTS）をインストール**
+
+   ```bash
+   sudo apt install nodejs -y
+   ```
+   
+3. **バージョン確認**（数字が表示されればOK）
+
+   ```bash
+   node -v   # 例: v22.x または LTS のバージョン
+   npm -v    # 例: 10.x 以上
+   ```
+
+---
+
+## 5. Cursor（エディタ）を Windows にインストール＆WSL と接続
+
+1. Windows に **Cursor** をインストール（公式手順に従って通常インストール）。
+2. Cursor を起動 → 左下の「**><**」アイコン（リモート）から **WSL: Ubuntu** を選択 → *Open Folder* で `~/workspace` を開く。
+
+---
 
 ### GitHubへの登録
 [ここ](https://github.com/jamsjplan/windows-setup/blob/main/GitHub.md)を参照してください。
 
 ### CloudFlareへの登録
 [ここ](https://github.com/jamsjplan/windows-setup/blob/main/GitHub.md)を参照してください。
-
-
-## :two:Voltaのインストール
-[ここ](https://zenn.dev/longbridge/articles/30c70144c97d32)に書いてある手順で進めてokです。
-以下はサイトが削除されてしまった時に備えて残しておきます。
-
-### インストールする前に
-以前にNodeバージョン管理ツールやNodeをインストールしている場合は、完全にアンインストールしておいてください。
-
-### Windows用のインストーラーをダウンロード
-[Volta公式サイト](https://volta.sh/)「Getting Started」から「download and run the Windows installer」のリンクをクリックし、インストーラーをダウンロードします。
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/22513473-5737-443c-8f8f-ebdc3af57197" />
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/f5114163-d539-4dad-8a70-65b1d77133c8" />
-
-青く選択している箇所のリンクをクリックしてください。
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/f636de56-dcc4-48fb-9503-4aef0a3cc8a6" />
-
-ここは`-windows-x86_64.msi`が付いているものをクリックしてください。
-
-
-### Windows開発者モードをを有効にする
-VoltaはWindowsの開発者モードを有効にしておく必要があります。
-Windows開発者モードをONにしておかないと、Angular CLIのインストール時にVoltaのエラーが発生します。
-検索ボックスに「開発者」と入力し、「開発者向け機能を使う」を起動します。
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/7af7d0f7-eacd-4892-95b6-4cf60f5ce378" />
-
-開発者モードをオンにします。
-
-<img width="461" height="122" alt="image" src="https://github.com/user-attachments/assets/391ce175-7617-4731-a294-03f2e2e6b097" />
-
-
-### Voltaをインストール
-ダウンロードしたインストーラーを実行します。デフォルトのままでインストールしてokです。
-「このアプリがデバイスに変更を加えることを許可しますか？」と表示された場合は「はい」を選択してください。
-
-### インストールできたか確認
-Git Bashを起動して以下のように入力します。バージョンが表示されればokです。
-
-```bash
-volta --version
-```
-
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/70057d5a-f091-4973-8b06-1e7ab008297b" />
-
-
-### Node.jsをダウンロードしてインストールする：
-```bash
-volta install node@22
-```
-
-### Node.jsのバージョンを確認する：
-```bash
-node -v # "v22"以上が表示されればok。
-```
-
-### npmのバージョンを確認する：
-```bash
-npm -v # "10"以上が表示されればok。
-```
-
-<img width="601" height="363" alt="image" src="https://github.com/user-attachments/assets/0b09bd71-f067-484c-b7d9-14e239208709" />
-
-
-ここまで確認ができたら、PCを再起動してください。
 
 ---
 ※以下は実際の開発環境を立ち上げる際の参考手順です。
@@ -126,17 +137,10 @@ npm -v # "10"以上が表示されればok。
 cd workspace/
 ```
 
-```bash
-pwd # 現在いるフォルダの位置を確認
-/c/Users/JAMS MK/workspace # このようになってればok
-```
-
 ## 新しくプロジェクトを作成する場合
 ```bash
 npx create-next-app@latest <アプリケーション名>
 cd <アプリケーション名>
-
-
 ```
 
 ## 既存のアプリケーションを実行する場合
@@ -167,3 +171,63 @@ http://localhost:3000 にアクセスすると、アプリケーションを確�
 ```bash
 npm install next@latest react@latest react-dom@latest
 ```
+
+---
+
+## 9. よく使う基本コマンド（Ubuntu）
+
+```bash
+pwd          # 今いる場所
+ls           # ファイル一覧
+cd フォルダ  # 移動
+cd ..        # 1つ上へ
+mkdir name   # フォルダ作成
+rm -rf name  # フォルダ削除（慎重に）
+```
+
+---
+
+## 10. トラブルシューティング（困ったらここ）
+
+### 10-1. `wsl --install` でエラーが出る
+
+* 「機能が無効」→ 2章の DISM コマンドで **Linux 用 Windows サブシステム** と **仮想マシンプラットフォーム** を有効にし、再起動。
+* VERSION が 1 → `wsl --set-version Ubuntu 2` を実行。
+
+### 10-2. Ubuntu が起動しない／設定やり直したい
+
+* PowerShell（管理者）で `wsl -l -v` で状態確認。必要に応じて `wsl --shutdown` で停止、再起動してやり直し。
+
+### 10-3. `node` / `npm` が見つからない
+
+* 端末を開き直す or `source ~/.bashrc` 実行。
+* `nvm install --lts` → `nvm use --lts` を再実行。
+
+### 10-4. `next: command not found` / 「'next' は内部コマンド…」系
+
+* プロジェクト直下で **依存関係のインストール** を忘れていませんか？
+
+  ```bash
+  npm install   # または npm ci
+  ```
+* それでも動かない場合は、Next.js を明示インストール：
+
+  ```bash
+  npm install next@latest react@latest react-dom@latest
+  ```
+
+### 10-5. ポート 3000 がすでに使われている
+
+```bash
+# 使用中プロセスを探す（必要なら lsof を入れる）
+sudo apt -y install lsof
+lsof -i :3000
+kill -9 <PID>
+```
+
+### 10-6. 画面が更新されない／ビルドが遅い
+
+* **WSL内のフォルダ**（`~/workspace` 等）で作業しているか確認。
+* Windows 側 (`/mnt/c`) での開発は遅くなりがちです。
+
+
